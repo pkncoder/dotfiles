@@ -1,0 +1,52 @@
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (2), removing 41.5MB
+Error in config: 
+Config error in file /home/kia/dotfiles/hyprpaper/.config/hypr/hyprpaper.conf at line 4: wallpaper failed (not preloaded)
+[LOG] Preloaded target /home/kia/.config/backgrounds/arch-rainbow.png in 17.65ms -> Pixel size: [1920, 1080]
+[LOG] Buffer created for target /home/kia/.config/backgrounds/arch-rainbow.png, Shared Memory usage: 8.3MB
+[LOG] Buffer created for target /home/kia/.config/backgrounds/arch-rainbow.png, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 41.5MB
+[WARN] Monitor HDMI-A-1 does not have a target! A wallpaper will not be created.
+[LOG] hyprpaper socket started at /run/user/1000/hypr/46174f78b374b6cea669c48880877a8bdcf7802f_1758479882_790175384/.hyprpaper.sock (fd: 4)
+[LOG] configure for DP-1
+[LOG] configure for DP-1
+[LOG] Image data for DP-1: /home/kia/.config/backgrounds/arch-rainbow.png at [-0.00, 0.00], scale: 2.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 3840x2160 for 563f551fcc30
+[LOG] handlePreferredScale: 1.00 for 563f551fcc30
+hyprpaper: no process found
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (2), removing 41.5MB
+Error in config: 
+Config error in file /home/kia/dotfiles/hyprpaper/.config/hypr/hyprpaper.conf at line 1: no such file: /home/kia/.config/backgrounds/better-shaded-landscape.png
+[WARN] Monitor HDMI-A-1 does not have a target! A wallpaper will not be created.
+[WARN] Monitor DP-1 does not have a target! A wallpaper will not be created.
+[LOG] hyprpaper socket started at /run/user/1000/hypr/46174f78b374b6cea669c48880877a8bdcf7802f_1758479882_790175384/.hyprpaper.sock (fd: 4)
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+Error in config: 
+Config error in file /home/kia/dotfiles/hyprpaper/.config/hypr/hyprpaper.conf at line 1: no such file: /home/kia/.config/backgrounds/better-shaded-landscape.png
+[WARN] Monitor HDMI-A-1 does not have a target! A wallpaper will not be created.
+[WARN] Monitor DP-1 does not have a target! A wallpaper will not be created.
+[LOG] hyprpaper socket started at /run/user/1000/hypr/46174f78b374b6cea669c48880877a8bdcf7802f_1758479882_790175384/.hyprpaper.sock (fd: 4)
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+Error in config: 
+Config error in file /home/kia/dotfiles/hyprpaper/.config/hypr/hyprpaper.conf at line 1: no such file: /home/kia/.config/backgrounds/better_shaded_landscape.png
+[WARN] Monitor HDMI-A-1 does not have a target! A wallpaper will not be created.
+[WARN] Monitor DP-1 does not have a target! A wallpaper will not be created.
+[LOG] hyprpaper socket started at /run/user/1000/hypr/46174f78b374b6cea669c48880877a8bdcf7802f_1758479882_790175384/.hyprpaper.sock (fd: 4)
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Preloaded target /home/kia/.config/backgrounds/better_shaded_landscape.jpg in 77.85ms -> Pixel size: [3000, 2000]
+[LOG] Buffer created for target /home/kia/.config/backgrounds/better_shaded_landscape.jpg, Shared Memory usage: 8.3MB
+[LOG] Buffer created for target /home/kia/.config/backgrounds/better_shaded_landscape.jpg, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 41.5MB
+[WARN] Monitor DP-1 does not have a target! A wallpaper will not be created.
+[LOG] hyprpaper socket started at /run/user/1000/hypr/46174f78b374b6cea669c48880877a8bdcf7802f_1758479882_790175384/.hyprpaper.sock (fd: 4)
+[LOG] configure for HDMI-A-1
+[LOG] configure for HDMI-A-1
+[LOG] Image data for HDMI-A-1: /home/kia/.config/backgrounds/better_shaded_landscape.jpg at [0.00, -156.25], scale: 0.64 (original image size: [3000, 2000])
+[LOG] Submitting viewport dest size 1920x1080 for 5591ad7d2910
+[LOG] handlePreferredScale: 1.00 for 5591ad7d2910
