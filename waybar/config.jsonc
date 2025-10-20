@@ -1,40 +1,97 @@
 {
-  "position": "top",
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
-  "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-  },
-  "battery": {
-    "states": {
-      "warning": 30,
-      "critical": 15
+    "height": 48,
+    "position": "top",
+    "layer": "top",
+    "modules-left": [
+        "custom/span",
+        "hyprland/workspaces",
+        "custom/span",
+        "custom/addEmpty"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "network",
+        "clock",
+        "custom/lock",
+        "custom/power-menu",
+        "custom/span"
+    ],
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "persistent_workspaces": {
+            "*": 2
+        }
     },
-    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{time}"
-  },
-  "network": {
-    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
-  },
-  "pulseaudio": {
-      "format": "{icon}  {volume}%",
-      "format-muted": "",
-      "format-icons": {
-          "default": ["", "", " "]
-      },
-      "on-click": "pavucontrol"
-  }
+    "hyprland/window": {
+        "format": "{}",
+        "tooltip": false
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%b %d %Y}",
+        "tooltip": false
+    },
+    "network": {
+        "format-wifi": "{ifname} ({signalStrength}%) ",
+        "format-ethernet": "󰞉 ",
+        "format-disconnected": "Disconnected ⚠",
+        "tooltip-format": "{gwaddr}",
+        "format-icons": [
+            "󰤯 ",
+            "󰤟 ",
+            "󰤢 ",
+            "󰤥 ",
+            "󰤨 "
+        ],
+        "tooltip": true
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} ",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/lock": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "hyprlock"
+    },
+    "custom/power-menu": {
+        "format": "⏻ ",
+        "tooltip": false,
+        "on-click": "systemctl poweroff"
+    },
+    "custom/span": {
+        "format": " "
+    },
+    "custom/addEmpty": {
+        "format": "+",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch workspace empty"
+    }
 }
