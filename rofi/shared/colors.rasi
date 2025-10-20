@@ -3,10 +3,9 @@
 /* Colors */
 
 * {
+    border-color: rgba(105, 105, 105, 0.4);
     background:     rgba(105, 105, 105, 0.3);
-    background-alt: rgba(255, 255, 255, 0.5);
-    foreground:     #EEEEEE;
-    selected:       #DDDDDD;
-    active:         #496886;
-    urgent:         #A36584;
+    foreground: #EEEEEE;
+    selected-foreground: rgb(50,50,50);
+
 }

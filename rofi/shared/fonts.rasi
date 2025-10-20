@@ -3,5 +3,5 @@
 /* Text Font */
 
 * {
-    font: "JetBrainsMono 10";
+    font: "Jet Brains Mono 10";
 }

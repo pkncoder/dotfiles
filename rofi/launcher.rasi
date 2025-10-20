@@ -4,12 +4,11 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser";
+	modi:                       "drun,filebrowser,window";
     show-icons:                 true;
-    display-drun:               " Apps";
-    display-run:                " Run";
-    display-filebrowser:        " Files";
-    display-window:             " Windows";
+    display-drun:               "Apps";
+    display-filebrowser:        "Files";
+    display-window:             "Windows";
 	drun-display-format:        "{name}";
 	window-format:              "{c} · {t}";
 }
@@ -19,29 +18,28 @@ configuration {
 @import                          "shared/fonts.rasi"
 
 * {
-    border-colour:               rgba(105, 105, 105, 0.4);
-    handle-colour:               var(selected);
+    border-colour:               var(border-color);
+    handle-colour:               var(foreground);
     background-colour:           var(background);
-    foreground-colour:           rgb(50, 50, 50);
-    alternate-background:        var(background-alt);
+    alternate-background:        var(background);
+    foreground-colour:           var(foreground);
     normal-background:           var(background);
     normal-foreground:           var(foreground);
-    urgent-background:           var(urgent);
+    urgent-background:           var(background);
     urgent-foreground:           var(background);
-    active-background:           var(active);
+    active-background:           var(background);
     active-foreground:           var(background);
-    selected-normal-background:  var(selected);
-    selected-normal-foreground:  rgb(100, 100, 100);
-    selected-urgent-background:  var(active);
-    selected-urgent-foreground:  var(background);
-    selected-active-background:  var(urgent);
-    selected-active-foreground:  var(background);
+    selected-normal-background:  var(background);
+    selected-urgent-background:  var(background);
+    selected-urgent-foreground:  var(selected-foreground);
+    selected-active-background:  var(background);
+    selected-active-foreground:  var(selected-foreground);
     alternate-normal-background: var(background);
     alternate-normal-foreground: var(foreground);
-    alternate-urgent-background: var(urgent);
-    alternate-urgent-foreground: var(background);
-    alternate-active-background: var(active);
-    alternate-active-foreground: var(background);
+    alternate-urgent-background: var(background);
+    alternate-urgent-foreground: var(foreground);
+    alternate-active-background: var(background);
+    alternate-active-foreground: var(foreground);
 }
 
 /*****----- Main Window -----*****/
@@ -52,7 +50,7 @@ window {
     anchor:                      west;
     fullscreen:                  false;
     width:                       420px;
-    height:                      92%;
+    height:                      calc(100% - 48px);
     x-offset:                    10;
     y-offset:                    28;
 
@@ -64,16 +62,9 @@ window {
     border-radius:               10px;
     border-color:                @border-colour;
     cursor:                      "default";
-    /* Backgroud Colors */
+
     background-color:            @background-colour;
-    /* Backgroud Image */
-    //background-image:          url("/path/to/image.png", none);
-    /* Simple Linear Gradient */
-    //background-image:          linear-gradient(red, orange, pink, purple);
-    /* Directional Linear Gradient */
-    //background-image:          linear-gradient(to bottom, pink, yellow, magenta);
-    /* Angle Linear Gradient */
-    //background-image:          linear-gradient(45, cyan, purple, indigo);
+
 }
 
 /*****----- Main Box -----*****/
@@ -209,15 +200,15 @@ element normal.active {
 }
 element selected.normal {
     background-color:            rgba(255, 255, 255, 0.5);
-    text-color:                  var(foreground);
+    text-color:                  @selected-foreground;
 }
 element selected.urgent {
     background-color:            var(selected-urgent-background);
-    text-color:                  var(selected-urgent-foreground);
+    text-color:                  @selected-foreground;
 }
 element selected.active {
     background-color:            var(selected-active-background);
-    text-color:                  var(selected-active-foreground);
+    text-color:                  @selected-foreground;
 }
 element alternate.normal {
     background-color:            var(alternate-normal-background);
