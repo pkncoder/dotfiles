@@ -1,0 +1,111 @@
+/**
+ * Copyright (C) 2020-2025 Aditya Shakya <adi1090x@gmail.com>
+ **/
+
+/*****----- Configuration -----*****/
+
+
+/*****----- Global Properties -----*****/
+@import                          "shared/colors.rasi"
+@import                          "shared/fonts.rasi"
+
+/*
+USE_ICON=YES
+*/
+
+* {
+    border-colour:               var(border-color);
+    handle-colour:               var(foreground);
+    background-colour:           var(background);
+    background-color:           var(background);
+    alternate-background:        var(background);
+    foreground-colour:           var(foreground);
+    normal-background:           var(background);
+    normal-foreground:           var(foreground);
+    urgent-background:           var(background);
+    urgent-foreground:           var(background);
+    active-background:           var(background);
+    active-foreground:           var(background);
+    selected-normal-background:  var(background);
+    selected-urgent-background:  var(background);
+    selected-urgent-foreground:  var(selected-foreground);
+    selected-active-background:  var(background);
+    selected-active-foreground:  var(selected-foreground);
+    alternate-normal-background: var(selected-normal-background);
+    alternate-normal-foreground: var(foreground);
+    alternate-urgent-background: var(background);
+    alternate-urgent-foreground: var(foreground);
+    alternate-active-background: var(background);
+    alternate-active-foreground: var(foreground);
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    fullscreen:                  false;
+    x-offset:                    0px;
+    y-offset:                    250px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               10px;
+    border-color:                @border-colour;
+    cursor:                      "default";
+    background-color:            @background;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    padding:                     0px;
+    background-color:            transparent;
+    children:                    [ "listview" ];
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    lines:                       1;
+    cycle:                       true;
+    scrollbar:                   false;
+    spacing:                     0px;
+    background-color:            transparent;
+    cursor:                      "default";
+    border-radius:               10px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    padding:                     0px;
+    margin:                      0px;
+    border-color:                @border-colour;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+    children: [ "element-icon" ];
+}
+element-icon {
+    margin: 0px;
+    background-color: transparent;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+element-text {
+    enabled: false;
+    width: 0px;
+    height: 0px;
+}
+element normal.normal,
+element alternate.normal {
+    border-color:                @border-colour;
+    background-color:            var(alternate-background);
+    text-color:                  var(foreground);
+}
+
+element selected {
+    background-color:            rgba(255, 255, 255, 0.5);
+    text-color:                  var(selected-foreground);
+}

@@ -4,7 +4,7 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,filebrowser,window";
+	modi:                       "drun,filebrowser";
     show-icons:                 true;
     display-drun:               "Apps";
     display-filebrowser:        "Files";
@@ -49,10 +49,10 @@ window {
     location:                    west;
     anchor:                      west;
     fullscreen:                  false;
-    width:                       420px;
-    height:                      calc(100% - 48px);
-    x-offset:                    10;
-    y-offset:                    28;
+    width:                       320px;
+    height:                      calc(100% - 70px);
+    x-offset:                    5;
+    y-offset:                    20;
 
     /* properties for all widgets */
     enabled:                     true;
@@ -72,7 +72,7 @@ mainbox {
     enabled:                     true;
     spacing:                     15px;
     margin:                      0px;
-    padding:                     30px;
+    padding:                     10px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
@@ -156,7 +156,7 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     
-    spacing:                     5px;
+    spacing:                     4px;
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
@@ -259,7 +259,7 @@ button {
     cursor:                      pointer;
 }
 button selected {
-    background-color:            var(selected-normal-background);
+    background-color:            rgba(255, 255, 255, 0.5);
     text-color:                  var(selected-normal-foreground);
 }
 

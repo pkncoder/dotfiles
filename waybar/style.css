@@ -17,7 +17,7 @@ window#waybar.hidden {
 }
 
 #window {
-  color: #64727d;
+  color: #ffffff;
 }
 
 #clock,
@@ -25,6 +25,7 @@ window#waybar.hidden {
 #tray,
 #mode,
 #custom-lock,
+#launcher,
 #workspaces,
 #idle_inhibitor,
 #custom-power-menu,
@@ -72,6 +73,10 @@ window#waybar.hidden {
   background-color: #eb4d4b;
 }
 
+#custom-launcher {
+  background-color: rgba(69, 69, 69, 0.39);
+}
+
 #workspaces {
   padding: 5px 2px;
   border-radius: 12px;
@@ -105,16 +110,6 @@ window#waybar.hidden {
   background-size: 400% 400%;
 }
 
-#custom-bluetooth-status {
-  padding-top: 4px;
-  font: 0.9em sans-serif;
-}
-
-#custom-fast-control-menu {
-    font-size: 18px;
-    padding-top: 4px;
-}
-
 #pulseaudio, #pulseaudio.muted  {
 
 }
@@ -123,32 +118,11 @@ window#waybar.hidden {
   color: #fff;
 }
 
-#battery {
-  color: #8fbcbb;
-
-}
-
-#battery.critical,
-#battery.warning,
-#battery.full,
-#battery.plugged {
-  color: #8fbcbb;
-
-}
-
 @keyframes blink {
   to {
     background-color: rgba(30, 34, 42, 0.5);
     color: #abb2bf;
   }
-}
-
-#battery.warning {
-  color: #ecd3a0;
-}
-
-#battery.critical:not(.charging) {
-  color: #fb958b;
 }
 
 #clock {
