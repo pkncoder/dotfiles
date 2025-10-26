@@ -104,9 +104,9 @@ textbox-prompt-colon {
     padding:                     6px 9px;
     border-radius:               10px;
     expand:                      false;
-    str:                         "";
+    str:                         "Search";
     background-color:            rgba(255, 255, 255, 0.5);
-    text-color:                  @foreground;
+    text-color:                  @selected-foreground;
 }
 entry {
     enabled:                     true;
@@ -114,7 +114,7 @@ entry {
     background-color:            rgba(255, 255, 255, 0.0);
     text-color:                  @background;
     cursor:                      text;
-    placeholder:                 "Search...";
+    placeholder:                 "";
     placeholder-color:           inherit;
     color:                       rgb(50, 50, 50);
 }
@@ -127,9 +127,9 @@ num-filtered-rows {
 textbox-num-sep {
     enabled:                     true;
     expand:                      false;
-    str:                         "/";
+    str:                         "";
     background-color:            rgba(255, 255, 255, 0.5);
-    text-color:                  inherit;
+    text-color:                  @selected-foreground;
 }
 num-rows {
     enabled:                     true;
