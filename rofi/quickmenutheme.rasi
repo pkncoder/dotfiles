@@ -44,7 +44,7 @@ window {
     transparency:                "real";
     fullscreen:                  false;
     x-offset:                    0px;
-    y-offset:                    250px;
+    y-offset:                    -15%;
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;

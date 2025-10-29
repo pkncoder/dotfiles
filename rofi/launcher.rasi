@@ -23,7 +23,7 @@ configuration {
     background-colour:           var(background);
     alternate-background:        var(background);
     foreground-colour:           var(foreground);
-    normal-background:           var(background);
+    normal-background:           rgba(105, 105, 105, 0.2);
     normal-foreground:           var(foreground);
     urgent-background:           var(background);
     urgent-foreground:           var(background);
@@ -34,7 +34,7 @@ configuration {
     selected-urgent-foreground:  var(selected-foreground);
     selected-active-background:  var(background);
     selected-active-foreground:  var(selected-foreground);
-    alternate-normal-background: var(background);
+    alternate-normal-background: rgba(105, 105, 105, 0.2);
     alternate-normal-foreground: var(foreground);
     alternate-urgent-background: var(background);
     alternate-urgent-foreground: var(foreground);
@@ -50,7 +50,7 @@ window {
     anchor:                      west;
     fullscreen:                  false;
     width:                       320px;
-    height:                      calc(100% - 70px);
+    height:                      99%;
     x-offset:                    5;
     y-offset:                    20;
 
@@ -260,7 +260,7 @@ button {
 }
 button selected {
     background-color:            rgba(255, 255, 255, 0.5);
-    text-color:                  var(selected-normal-foreground);
+    text-color:                  @selected-foreground;
 }
 
 /*****----- Message -----*****/

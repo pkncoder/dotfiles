@@ -1,0 +1,1 @@
+echo $QUICKMENU_FILES

@@ -7,6 +7,9 @@ return {
       formatters_by_ft = {
         xml = { "xmlformatter" }, -- Replace with the actual formatter name
         ui = { "xmlformatter" },
+        frag = { "glsl_analyzer" },
+        vert = { "glsl_analyzer" },
+        glsl = { "glsl_analyzer" },
       },
       -- You can add other global conform options here if needed
     },
