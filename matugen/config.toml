@@ -1,0 +1,5 @@
+[config]
+
+[templates.btop]
+input_path = '~/.config/matugen/templates/btop.tpl'
+output_path = '~/.config/btop/themes/matugen.theme'
