@@ -3,7 +3,9 @@
 These are my dotfiles for my linux distro configuration.
 
 ## Extra work when using
-The noctalia-shell repo needs to be cloned into quickshell/ *it isn't in it currently due to it being really large*
+The noctalia-shell repo needs to be cloned into quickshell/ 
+
+This is due to noctalia-shell being really large.
 
 ## Credit where Credit is due
 
