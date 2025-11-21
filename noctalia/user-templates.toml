@@ -6,3 +6,15 @@
 input_path = "~/.config/matugen/templates/btop.tpl"
 output_path = "~/.config/btop/themes/matugen.theme"
 
+[templates.vesktop]
+input_path = '~/.config/matugen/templates/vesktop.css'
+output_path = '~/.var/app/dev.vencord.Vesktop/config/vesktop/themes/LunarCord.css'
+
+[templates.cava]
+input_path = '~/.config/matugen/templates/cava.ini'
+output_path = '~/.config/cava/config'
+
+[templates.neovim]
+input_path = '~/.config/matugen/templates/template.lua'
+output_path = '~/.config/nvim/generated.lua'
+post_hook = 'pkill -SIGUSR1 nvim'

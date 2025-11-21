@@ -3,3 +3,7 @@
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.tpl'
 output_path = '~/.config/btop/themes/matugen.theme'
+
+[templates.vesktop]
+input_path = '~/.config/matugen/templates/vesktop.css'
+output_path = '~/.var/app/dev.vencord.Vesktop/config/vesktop/themes/LunarCord.css'
