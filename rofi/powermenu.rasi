@@ -1,6 +1,0 @@
-configuration {
-    show-icons:     false;
-    font:           "Jet Brains Mono 6";
-}
-
-@theme "powermenutheme"

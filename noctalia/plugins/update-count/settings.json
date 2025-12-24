@@ -1,0 +1,8 @@
+{
+  "updateIntervalMinutes": 60,
+  "updateTerminalCommand": "foot -e",
+  "currentIconName": "database-exclamation",
+  "hideOnZero": false,
+  "customCmdGetNumUpdates": "",
+  "customCmdDoSystemUpdate": ""
+}

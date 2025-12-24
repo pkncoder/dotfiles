@@ -1,0 +1,9 @@
+// Clipboard history
+spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+
+// Start noctalia-shell
+spawn-sh-at-startup "qs -c ~/.config/quickshell/noctalia-shell/"
+
+// Start extra servers
+spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1" // Polkit agent
+spawn-at-startup "vicinae" "server" // Vicinae

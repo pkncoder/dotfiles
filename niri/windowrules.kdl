@@ -1,0 +1,55 @@
+// ----- globals -----
+
+// Global window rule
+window-rule {
+    draw-border-with-background false
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+
+
+
+// ----- Focusing windows -----
+
+// Focused window 
+window-rule {
+    match is-active=true
+    opacity 0.9
+}
+
+// Unfocused window
+window-rule {
+    match is-active=false
+    opacity 0.8
+}
+
+
+
+
+// ----- floating windows -----
+
+// Floating windows
+window-rule {
+    match app-id=r#"^xdg-desktop-portal$"#
+    open-floating true
+}
+
+// Firefox Picture-In-Picture
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id="zoom"
+    open-floating true
+}
+
+
+
+
+// ----- extra windows -----
+
+// Firefox
+window-rule {
+    match app-id="firefox"
+    default-column-width { proportion 0.66667; }
+}
+

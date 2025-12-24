@@ -1,5 +1,0 @@
-configuration {
-    modi:                       "calc";
-}
-
-@theme "calculatortheme"

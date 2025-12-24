@@ -1,0 +1,40 @@
+prefer-no-csd
+
+layout {
+    gaps 6
+    background-color "transparent"
+    center-focused-column "never"
+    default-column-width { proportion 0.5; }
+    border {
+        width 1
+        active-color   "transparent"
+        inactive-color "#d0d0d0"
+        urgent-color   "#cc4444"
+    }
+
+    focus-ring {
+        width 1
+        active-gradient from="red" to="orange" angle=45 in="oklch longer hue"
+        inactive-color "#505050"
+    }
+
+    shadow {
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0007"
+    }
+
+    preset-column-widths {
+        // proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+}
+
+overview {
+    workspace-shadow {
+        off
+    }
+}
+

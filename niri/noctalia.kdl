@@ -1,0 +1,16 @@
+layout {
+
+    shadow {
+        color "#00000070"
+    }
+
+    tab-indicator {
+        active-color   "#5fdbba"
+        inactive-color "#005141"
+        urgent-color   "#ffb4ab"
+    }
+
+    insert-hint {
+        color "#5fdbba80"
+    }
+}

@@ -1,0 +1,27 @@
+input {
+    keyboard {
+        xkb {
+        }
+        numlock
+    }
+    touchpad {
+        natural-scroll
+    }
+    mouse {
+    }
+    trackpoint {
+    }
+
+    warp-mouse-to-focus
+
+    focus-follows-mouse 
+}
+
+cursor {
+    xcursor-theme "Bibata-Modern-Ice"
+    xcursor-size 22
+
+    hide-when-typing
+    hide-after-inactive-ms 6000
+}
+
