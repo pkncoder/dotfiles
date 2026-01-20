@@ -60,7 +60,7 @@ Rectangle {
         Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
         text: root.pluginApi?.mainInstance?.updateCount.toString()
         color: root.hovered ? Color.mOnHover : Color.mOnSurface
-        pointSize: Style.fontSizeS
+        pointSize: Style.barFontSize
       }
     }
 
@@ -70,7 +70,8 @@ Rectangle {
       cursorShape: root.pluginApi?.mainInstance?.updateCount > 0 ? Qt.PointingHandCursor : Qt.ArrowCursor
 
       onClicked: {
-        root.pluginApi?.mainInstance?.startDoSystemUpdate();
+        if (root.pluginApi?.mainInstance?.updateCount > 0)
+          root.pluginApi?.mainInstance?.startDoSystemUpdate();
       }
 
 

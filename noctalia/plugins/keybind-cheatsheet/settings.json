@@ -1,0 +1,370 @@
+{
+  "detectedCompositor": "niri",
+  "cheatsheetData": [
+    {
+      "title": "Applications",
+      "binds": [
+        {
+          "keys": "Super + D",
+          "desc": "Run: niri"
+        },
+        {
+          "keys": "Super + Q",
+          "desc": "Open Terminal"
+        },
+        {
+          "keys": "Super + E",
+          "desc": "Open File Browser"
+        },
+        {
+          "keys": "Super + W",
+          "desc": "Wallpaper"
+        },
+        {
+          "keys": "Super + N",
+          "desc": "Notification Center"
+        },
+        {
+          "keys": "Vol Up",
+          "desc": "spawn-sh \"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0\""
+        },
+        {
+          "keys": "Vol Down",
+          "desc": "spawn-sh \"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-\""
+        },
+        {
+          "keys": "Mute",
+          "desc": "spawn-sh \"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle\""
+        },
+        {
+          "keys": "Mic Mute",
+          "desc": "spawn-sh \"wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle\""
+        },
+        {
+          "keys": "Play",
+          "desc": "spawn-sh \"playerctl play-pause\""
+        },
+        {
+          "keys": "Stop",
+          "desc": "spawn-sh \"playerctl stop\""
+        },
+        {
+          "keys": "Prev",
+          "desc": "spawn-sh \"playerctl previous\""
+        },
+        {
+          "keys": "Next",
+          "desc": "spawn-sh \"playerctl next\""
+        }
+      ]
+    },
+    {
+      "title": "Window Management",
+      "binds": [
+        {
+          "keys": "Super + Shift + C",
+          "desc": "Close Window"
+        },
+        {
+          "keys": "Super + Ctrl + F",
+          "desc": "Fullscreen Window"
+        },
+        {
+          "keys": "Super + Backslash",
+          "desc": "Expel Window From Column"
+        }
+      ]
+    },
+    {
+      "title": "Column Navigation",
+      "binds": [
+        {
+          "keys": "Super + Left",
+          "desc": "Focus Column Left"
+        },
+        {
+          "keys": "Super + Right",
+          "desc": "Focus Column Right"
+        },
+        {
+          "keys": "Super + Ctrl + WheelScrollDown",
+          "desc": "Focus Column Right"
+        },
+        {
+          "keys": "Super + Ctrl + WheelScrollUp",
+          "desc": "Focus Column Left"
+        }
+      ]
+    },
+    {
+      "title": "Window Focus",
+      "binds": [
+        {
+          "keys": "Super + Down",
+          "desc": "Focus Window Or Workspace Down"
+        },
+        {
+          "keys": "Super + Up",
+          "desc": "Focus Window Or Workspace Up"
+        }
+      ]
+    },
+    {
+      "title": "Workspace Navigation",
+      "binds": [
+        {
+          "keys": "Super + 1",
+          "desc": "Focus Workspace 1"
+        },
+        {
+          "keys": "Super + 2",
+          "desc": "Focus Workspace 2"
+        },
+        {
+          "keys": "Super + 3",
+          "desc": "Focus Workspace 3"
+        },
+        {
+          "keys": "Super + 4",
+          "desc": "Focus Workspace 4"
+        },
+        {
+          "keys": "Super + 5",
+          "desc": "Focus Workspace 5"
+        },
+        {
+          "keys": "Super + 6",
+          "desc": "Focus Workspace 6"
+        },
+        {
+          "keys": "Super + 7",
+          "desc": "Focus Workspace 7"
+        },
+        {
+          "keys": "Super + 8",
+          "desc": "Focus Workspace 8"
+        },
+        {
+          "keys": "Super + 9",
+          "desc": "Focus Workspace 9"
+        },
+        {
+          "keys": "Super + WheelScrollDown",
+          "desc": "Focus Workspace Down"
+        },
+        {
+          "keys": "Super + WheelScrollUp",
+          "desc": "Focus Workspace Up"
+        }
+      ]
+    },
+    {
+      "title": "Move Columns",
+      "binds": [
+        {
+          "keys": "Super + Shift + Left",
+          "desc": "Move Column Left"
+        },
+        {
+          "keys": "Super + Shift + Down",
+          "desc": "Move Column To Workspace Down"
+        },
+        {
+          "keys": "Super + Shift + Up",
+          "desc": "Move Column To Workspace Up"
+        },
+        {
+          "keys": "Super + Shift + Right",
+          "desc": "Move Column Right"
+        },
+        {
+          "keys": "Super + Shift + Ctrl + Left",
+          "desc": "Move Column To Monitor Left"
+        },
+        {
+          "keys": "Super + Shift + Ctrl + Down",
+          "desc": "Move Column To Monitor Down"
+        },
+        {
+          "keys": "Super + Shift + Ctrl + Up",
+          "desc": "Move Column To Monitor Up"
+        },
+        {
+          "keys": "Super + Shift + Ctrl + Right",
+          "desc": "Move Column To Monitor Right"
+        },
+        {
+          "keys": "Super + Shift + 1",
+          "desc": "Move Column To Workspace 1"
+        },
+        {
+          "keys": "Super + Shift + 2",
+          "desc": "Move Column To Workspace 2"
+        },
+        {
+          "keys": "Super + Shift + 3",
+          "desc": "Move Column To Workspace 3"
+        },
+        {
+          "keys": "Super + Shift + 4",
+          "desc": "Move Column To Workspace 4"
+        },
+        {
+          "keys": "Super + Shift + 5",
+          "desc": "Move Column To Workspace 5"
+        },
+        {
+          "keys": "Super + Shift + 6",
+          "desc": "Move Column To Workspace 6"
+        },
+        {
+          "keys": "Super + Shift + 7",
+          "desc": "Move Column To Workspace 7"
+        },
+        {
+          "keys": "Super + Shift + 8",
+          "desc": "Move Column To Workspace 8"
+        },
+        {
+          "keys": "Super + Shift + 9",
+          "desc": "Move Column To Workspace 9"
+        },
+        {
+          "keys": "Super + Shift + WheelScrollDown",
+          "desc": "Move Column To Workspace Down"
+        },
+        {
+          "keys": "Super + Shift + WheelScrollUp",
+          "desc": "Move Column To Workspace Up"
+        },
+        {
+          "keys": "Super + Ctrl + Shift + WheelScrollDown",
+          "desc": "Move Column Right"
+        },
+        {
+          "keys": "Super + Ctrl + Shift + WheelScrollUp",
+          "desc": "Move Column Left"
+        }
+      ]
+    },
+    {
+      "title": "Column Management",
+      "binds": [
+        {
+          "keys": "Super + F",
+          "desc": "Maximize Column"
+        }
+      ]
+    },
+    {
+      "title": "Column Width",
+      "binds": [
+        {
+          "keys": "Super + R",
+          "desc": "Switch Preset Column Width"
+        },
+        {
+          "keys": "Super + Minus",
+          "desc": "Set Column Width \" 10%\""
+        },
+        {
+          "keys": "Super + Equal",
+          "desc": "Set Column Width \"+10%\""
+        }
+      ]
+    },
+    {
+      "title": "Screenshots",
+      "binds": [
+        {
+          "keys": "Super + P",
+          "desc": "Screenshot"
+        },
+        {
+          "keys": "Super + Shift + P",
+          "desc": "Screenshot Screen"
+        },
+        {
+          "keys": "Super + Ctrl + P",
+          "desc": "Screenshot Window"
+        }
+      ]
+    },
+    {
+      "title": "System",
+      "binds": [
+        {
+          "keys": "Super + Alt + Ctrl + Shift + E",
+          "desc": "Quit"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "binds": [
+        {
+          "keys": "Super + Shift + Slash",
+          "desc": "Show Hotkey Overlay"
+        },
+        {
+          "keys": "Super + Tab",
+          "desc": "Toggle Overview"
+        },
+        {
+          "keys": "Super + C",
+          "desc": "Center Column"
+        },
+        {
+          "keys": "Super + Shift + F",
+          "desc": "Toggle Window Floating"
+        },
+        {
+          "keys": "Super + Shift + V",
+          "desc": "Switch Focus Between Floating And Tiling"
+        },
+        {
+          "keys": "Super + BracketLeft",
+          "desc": "Consume Or Expel Window Left"
+        },
+        {
+          "keys": "Super + BracketRight",
+          "desc": "Consume Or Expel Window Right"
+        },
+        {
+          "keys": "Super + Shift + R",
+          "desc": "Switch Preset Window Height"
+        },
+        {
+          "keys": "Super + Shift + Minus",
+          "desc": "Set Window Height \" 10%\""
+        },
+        {
+          "keys": "Super + Shift + Equal",
+          "desc": "Set Window Height \"+10%\""
+        },
+        {
+          "keys": "Super + Ctrl + Left",
+          "desc": "Focus Monitor Left"
+        },
+        {
+          "keys": "Super + Ctrl + Down",
+          "desc": "Focus Monitor Down"
+        },
+        {
+          "keys": "Super + Ctrl + Up",
+          "desc": "Focus Monitor Up"
+        },
+        {
+          "keys": "Super + Ctrl + Right",
+          "desc": "Focus Monitor Right"
+        }
+      ]
+    }
+  ],
+  "triggerToggle": 1768879622288,
+  "niriConfigPath": "~/.config/niri/config.kdl",
+  "hyprlandConfigPath": "~/.config/hypr/hyprland.conf",
+  "modKeyVariable": "$mod",
+  "windowHeight": 850,
+  "windowWidth": 1400
+}

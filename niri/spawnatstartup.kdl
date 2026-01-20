@@ -1,3 +1,6 @@
+// xwayland-satellite
+spawn-at-startup "xwayland-satellite" 
+
 // Clipboard history
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 

@@ -1,5 +1,17 @@
 layout {
 
+    focus-ring {
+        active-color   "#5fdbba"
+        inactive-color "#0a1519"
+        urgent-color   "#ffb4ab"
+    }
+
+    border {
+        active-color   "#5fdbba"
+        inactive-color "#0a1519"
+        urgent-color   "#ffb4ab"
+    }
+
     shadow {
         color "#00000070"
     }
@@ -12,5 +24,12 @@ layout {
 
     insert-hint {
         color "#5fdbba80"
+    }
+}
+
+recent-windows {
+    highlight {
+        active-color "#5fdbba"
+        urgent-color "#ffb4ab"
     }
 }
